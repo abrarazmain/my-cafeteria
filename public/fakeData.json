@@ -1,0 +1,30 @@
+[
+    {
+      "_id": "6425c94d57b2b365ef5cb83f",
+      "picture": "http://placehold.it/32x32",
+      "name": "Kathleen Lane",
+      "gender": "female",
+      "title": "best cafe in town"
+    },
+    {
+      "_id": "6425c94dde16286cfd1c5791",
+      "picture": "http://placehold.it/32x32",
+      "name": "Marina Richardson",
+      "gender": "female",
+      "title": "best cafe in town"
+    },
+    {
+      "_id": "6425c94d10ab81bf69509377",
+      "picture": "http://placehold.it/32x32",
+      "name": "Rodgers Stanton",
+      "gender": "male",
+      "title": "best cafe in town"
+    },
+    {
+      "_id": "6425c94d13f48188bf05ac32",
+      "picture": "http://placehold.it/32x32",
+      "name": "Thelma Dyer",
+      "gender": "female",
+      "title": "best cafe in town"
+    }
+  ]
