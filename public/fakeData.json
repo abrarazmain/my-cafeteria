@@ -6,7 +6,9 @@
     "pic": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "date": "Mar 14 (4 Days ago)",
     "reading_time": "05 min read",
-    "title": "How to get your first jod as a self-taught programmer"
+    "title": "How to get your first jod as a self-taught programmer",
+    "read_time_num":"5"
+    
   },
   {
     "_id": "6425c94dde16286cfd1c5791",
@@ -14,8 +16,9 @@
     "name": "Marina Richardson",
     "pic": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "date": "Mar 14 (4 Days ago)",
-    "reading_time": "05 min read",
-    "title": "How to get your first jod as a self-taught programmer"
+    "reading_time": "15 min read",
+    "title": "How to get your first jod as a self-taught programmer",
+    "read_time_num":"15"
   },
   {
     "_id": "6425c94d10ab81bf69509377",
@@ -23,8 +26,9 @@
     "name": "Rodgers Stanton",
     "pic": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "date": "Mar 14 (4 Days ago)",
-    "reading_time": "05 min read",
-    "title": "How to get your first jod as a self-taught programmer"
+    "reading_time": "10 min read",
+    "title": "How to get your first jod as a self-taught programmer",
+    "read_time_num":"10"
   },
   {
     "_id": "6425c94d13f48188bf05ac32",
@@ -32,7 +36,8 @@
     "name": "Thelma Dyer",
     "pic": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "date": "Mar 14 (4 Days ago)",
-    "reading_time": "05 min read",
-    "title": "How to get your first jod as a self-taught programmer"
+    "reading_time": "08 min read",
+    "title": "How to get your first jod as a self-taught programmer",
+    "read_time_num":"8"
   }
 ]
