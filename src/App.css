@@ -43,3 +43,9 @@
 .test {
   border: 1px solid rgba(17, 17, 17, 0.15);
 }
+
+.main-container {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 20px;
+}
