@@ -16,7 +16,7 @@ const SingleCard = ({ card, setReadTime, handleReadTime, handleTitle }) => {
       <div className="author-container">
         <div className="test2">
           <div>
-            <img className="author-pic" src={pic} alt="" />
+            <img  className="author-pic" src={pic} alt="" />
           </div>
           <div>
             <p className="author-name">{name}</p>

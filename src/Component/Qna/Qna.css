@@ -1,0 +1,12 @@
+.qna-container{
+    background-color: rgba(17, 17, 17, 0.05);;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 10px;
+}
+.qna-container p{
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: larger;
+    padding: 10px auto;
+}

@@ -7,9 +7,20 @@ import Cards from "./Component/cards/Cards";
 import Bookmark from "./Component/bookmark/Bookmark";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Qna from "./Component/qna/Qna";
+
 
 function App() {
   const [readTime, setReadTime] = useState(0);
+  const [Titles, setTitles] = useState([]);
+
+  useEffect(() => {
+    const previousTitles = JSON.parse(localStorage.getItem("titles"));
+    if (previousTitles) {
+      setTitles(previousTitles);
+    }
+  }, []);
+
   const handleReadTime = (time) => {
     const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
     if (previousReadTime) {
@@ -21,43 +32,43 @@ function App() {
   };
 
   const handleTitle = (title) => {
-    const previousTitle = JSON.parse(localStorage.getItem("titles"));
-    let blogTitle = [];
-    if (previousTitle) {
-      const isThisExist = previousTitle.find((t) => t == title);
+    const previousTitles = JSON.parse(localStorage.getItem("titles"));
+    if (previousTitles) {
+      const isThisExist = previousTitles.find((t) => t === title);
       if (isThisExist) {
-        toast("AlREADY EXIST !!", {
+        toast("ALREADY EXIST !!", {
           position: toast.POSITION.TOP_CENTER,
         });
       } else {
-        blogTitle.push(...previousTitle, title);
-        localStorage.setItem("titles", JSON.stringify(blogTitle));
+        const updatedTitles = [...previousTitles, title];
+        localStorage.setItem("titles", JSON.stringify(updatedTitles));
+        setTitles(updatedTitles);
       }
     } else {
-      blogTitle.push(title);
-      localStorage.setItem("titles", JSON.stringify(blogTitle));
+      const updatedTitles = [title];
+      localStorage.setItem("titles", JSON.stringify(updatedTitles));
+      setTitles(updatedTitles);
     }
-    window.location.reload()
   };
-
 
   return (
     <div className="App">
-      <Header></Header>
+      <Header />
       <hr className="test" />
 
-      <div className="main-container ">
+      <div className="main-container">
         <div>
           <Cards
             setReadTime={setReadTime}
             handleReadTime={handleReadTime}
             handleTitle={handleTitle}
-          ></Cards>
+          />
         </div>
         <div>
-          <Bookmark readTime={readTime}></Bookmark>
+          <Bookmark readTime={readTime} Titles={Titles} />
         </div>
       </div>
+   
       <ToastContainer
         position="top-center"
         autoClose={2001}
@@ -69,7 +80,8 @@ function App() {
         draggable
         pauseOnHover
         theme="light"
-      ></ToastContainer>
+      />
+      <Qna></Qna>
     </div>
   );
 }

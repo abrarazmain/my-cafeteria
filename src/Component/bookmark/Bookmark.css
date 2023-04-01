@@ -1,55 +1,53 @@
-.reading-time-container{
-    width: 411px;
-height: 80px;
+.reading-time-container {
+  width: 411px;
+  height: 80px;
+  background: rgba(96, 71, 236, 0.1);
+  border: 1px solid #6047ec;
+  border-radius: 8px;
+}
+.reading-time-container h2 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 160%;
+  color: #6047ec;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.bookmark-container {
+  position: sticky;
+  top: 10px;
+  bottom: auto;
+}
+.reset {
+  background-color: rgba(96, 71, 236, 0.1);
+  padding: 5px;
+  border-radius: 10px;
+  color: #6047ec;
+  border: solid rgba(96, 71, 236, 0.1);
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 10px;
+}
 
+.bookmark-title-container {
+  margin-top: 20px;
 
-background: rgba(96, 71, 236, 0.1);
-border: 1px solid #6047EC;
-border-radius: 8px;
-}
-.reading-time-container h2{
-    font-family: 'Exo 2';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 160%;
-color: #6047EC;
-display: flex;
-justify-content: space-between;
-padding: 5px;
-}
-.bookmark-container{
-    position: sticky;
-    top: 10px;
-    bottom: auto;
-}
-.reset{
-    background-color: rgba(96, 71, 236, 0.1);;
-    padding: 5px;
-    border-radius: 10px;
-    color: #6047EC;
-    border: solid rgba(96, 71, 236, 0.1);
-    cursor: pointer;
-    font-weight: 700;
-    margin-left: 10px;
-}
-.bookmark-title-container{
-margin-top: 20px;
-
-background: rgba(17, 17, 17, 0.05);
-border-radius: 8px;
-width: 411px;
-height: 1352px;
+  background: rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  width: 411px;
+  height: auto;
+  padding-bottom: 50px;
 }
 .bookmark-count {
-    font-family: "Exo 2";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 160%;
-    text-align: left;
-    padding: 20px;
-  ;
-    color: #111111;
-  }
-  
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 160%;
+  text-align: left;
+  padding: 20px;
+  color: #111111;
+}

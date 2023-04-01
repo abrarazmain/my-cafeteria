@@ -15,6 +15,23 @@
   margin: 30px;
 }
 
+@media screen and (max-width: 900px) {
+  .author-container {
+    display: flex;
+   justify-content: left;
+    margin: 30px;
+    gap: 15px;
+  }
+  .card-img{
+    width: auto;
+
+  }
+  .card-container{
+    width: 80%;
+    margin: 30PX;
+  }
+}
+
 .author-pic {
   width: 60px;
   height: 60px;

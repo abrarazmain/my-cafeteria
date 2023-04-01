@@ -2,21 +2,22 @@ import React, { useEffect, useState } from "react";
 import BookmarkBlog from "../bookmarkBlog/BookmarkBlog";
 import "./Bookmark.css";
 
-const Bookmark = ({ readTime }) => {
+const Bookmark = ({ Titles }) => {
   const resetTime = () => {
     localStorage.removeItem("readTime");
-    localStorage.removeItem('titles')
+    localStorage.removeItem("titles");
     window.location.reload();
   };
+
   const sum = localStorage.getItem("readTime");
-  const title = localStorage.getItem("titles");
+  const titleLength = localStorage.getItem("titles");
+  const newTitleLength = JSON.parse(titleLength);
 
   const [titles, setTitles] = useState([]);
-
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem("titles")) || [];
     setTitles(data);
-  }, []);
+  }, [Titles]);
 
   useEffect(() => {
     if (titles.length > 0) {
@@ -24,12 +25,7 @@ const Bookmark = ({ readTime }) => {
     } else {
       localStorage.removeItem("myData");
     }
-  }, [titles]);
-
-
-  const titleLength = localStorage.getItem('titles')
-    const newTitleLength = JSON.parse(titleLength)
-    console.log();
+  }, [newTitleLength]);
 
   return (
     <div className="bookmark-container">
@@ -43,14 +39,14 @@ const Bookmark = ({ readTime }) => {
         </h2>
       </div>
       <div className="bookmark-title-container">
-        <h1 className="bookmark-count">Bookmarked Blogs:{newTitleLength? newTitleLength.length : 0}</h1>
+        <h1 className="bookmark-count">
+          Bookmarked Blogs:{newTitleLength ? newTitleLength.length : 0}
+        </h1>
         {titles.length > 0 &&
-        titles.map((title) => (
-          <BookmarkBlog key={title} title={title}></BookmarkBlog> 
-        ))}
-        
+          titles.map((title) => (
+            <BookmarkBlog key={title} title={title}></BookmarkBlog>
+          ))}
       </div>
-      
     </div>
   );
 };
