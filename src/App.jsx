@@ -32,14 +32,14 @@ function App() {
       } else {
         blogTitle.push(...previousTitle, title);
         localStorage.setItem("titles", JSON.stringify(blogTitle));
-        console.log(blogTitle);
       }
     } else {
       blogTitle.push(title);
       localStorage.setItem("titles", JSON.stringify(blogTitle));
-      console.log(blogTitle);
     }
+    window.location.reload()
   };
+
 
   return (
     <div className="App">
