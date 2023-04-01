@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SingleCard from "../singleCard/SingleCard";
 
-const Cards = ({setReadTime,handleReadTime}) => {
+const Cards = ({ setReadTime, handleReadTime, handleTitle }) => {
   console.log(setReadTime);
   const [cards, setCards] = useState([]);
   useEffect(() => {
@@ -12,7 +12,13 @@ const Cards = ({setReadTime,handleReadTime}) => {
   return (
     <div>
       {cards.map((singleCard) => (
-          <SingleCard handleReadTime={handleReadTime} setReadTime = {setReadTime} card={singleCard} key={singleCard.id}></SingleCard>
+        <SingleCard
+          handleReadTime={handleReadTime}
+          setReadTime={setReadTime}
+          card={singleCard}
+          key={singleCard.id}
+          handleTitle={handleTitle}
+        ></SingleCard>
       ))}
     </div>
   );

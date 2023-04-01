@@ -3,40 +3,34 @@ import "./SingleCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faBookmark } from "@fortawesome/free-solid-svg-icons";
 
-const SingleCard = ({ card, setReadTime, handleReadTime }) => {
+
+const SingleCard = ({ card, setReadTime, handleReadTime,handleTitle }) => {
   const { _id, name, pic, cover, date, reading_time, title, read_time_num } =
     card;
 
-  
-  
   // =================================================
 
-  const handleTitle = (title) => {
-    const previousTitle = JSON.parse(localStorage.getItem('titles'))
-    let blogTitle = []
+  // const handleTitle = (title) => {
+  //   const previousTitle = JSON.parse(localStorage.getItem("titles"));
+  //   let blogTitle = [];
+  //   if (previousTitle) {
+  //     const isThisExist = previousTitle.find((t) => t == title);
+  //     if (isThisExist) {
+  //       toast("AlREADY EXIST !!", {
+  //         position: toast.POSITION.TOP_CENTER,
+  //       });
+  //     } else {
+  //       blogTitle.push(...previousTitle, title);
+  //       localStorage.setItem("titles", JSON.stringify(blogTitle));
+  //       console.log(blogTitle);
+  //     }
+  //   } else {
+  //     blogTitle.push(title);
+  //     localStorage.setItem("titles", JSON.stringify(blogTitle));
+  //     console.log(blogTitle);
+  //   }
+  // };
 
-    if (previousTitle) {
-
-      const isThisExist = previousTitle.find(t => t == title)
-      if (isThisExist) {
-        alert('hellow')
-      }
-
-  else {
-    blogTitle.push(...previousTitle, title)
-    localStorage.setItem('titles', JSON.stringify(blogTitle))
-    console.log(blogTitle);
-     }
-    }
-    else {
-      blogTitle.push(title)
-      localStorage.setItem('titles', JSON.stringify(blogTitle))
-      console.log(blogTitle);
-    }
-  }
-
-  
-  
   // =========================================
   return (
     <div className="card-container">
@@ -76,6 +70,7 @@ const SingleCard = ({ card, setReadTime, handleReadTime }) => {
       >
         Mark as read
       </p>
+      
     </div>
   );
 };

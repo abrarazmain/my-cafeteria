@@ -7,9 +7,12 @@ const Bookmark = ({ readTime }) => {
     localStorage.removeItem("readTime");
     window.location.reload();
   };
-  console.log(readTime);
   const sum = localStorage.getItem("readTime");
-  console.log(sum);
+
+
+  const titles = localStorage.getItem("titles")
+
+
   return (
     <div className="bookmark-container">
       <div className="reading-time-container">
@@ -23,8 +26,11 @@ const Bookmark = ({ readTime }) => {
       </div>
       <div className="bookmark-title-container">
         <h1 className="bookmark-count">Bookmarked Blogs:</h1>
+
+        {
+         titles ||  titles.map(title => <BookmarkBlog title = {title}></BookmarkBlog>)
+        }
         
-        <BookmarkBlog></BookmarkBlog>
       </div>
     </div>
   );
