@@ -3,8 +3,9 @@ import './BookmarkBlog.css'
 
 const BookmarkBlog = () => {
     return (
-        <div>
-            <h1>Bookmarked Blogs:</h1>
+        <div className='bookmark-card-container'>
+            
+            <h2 className='bookmark-card'>How to get your first jod as a self-taught programmer</h2>
         </div>
     );
 };

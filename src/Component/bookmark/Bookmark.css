@@ -14,10 +14,14 @@ font-weight: 700;
 font-size: 24px;
 line-height: 160%;
 color: #6047EC;
+display: flex;
+justify-content: space-between;
+padding: 5px;
 }
 .bookmark-container{
     position: sticky;
     top: 10px;
+    bottom: auto;
 }
 .reset{
     background-color: rgba(96, 71, 236, 0.1);;
@@ -37,3 +41,15 @@ border-radius: 8px;
 width: 411px;
 height: 1352px;
 }
+.bookmark-count {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    text-align: left;
+    padding: 20px;
+  ;
+    color: #111111;
+  }
+  

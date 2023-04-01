@@ -1,0 +1,21 @@
+.bookmark-card-container {
+  width: 351px;
+  height: 98px;
+  margin: auto;
+  width: 351px;
+  height: 98px;
+  left: 1219px;
+  top: 366px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+.bookmark-card {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: left;
+  color: #111111;
+  padding: 20px;
+}
